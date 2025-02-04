@@ -1,0 +1,2 @@
+docker run <image>  --> will return container_id
+docker exec -it <container_id/container_name> bash  --> gives bash for that container
