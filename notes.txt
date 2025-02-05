@@ -1,2 +1,9 @@
 docker run <image>  --> will return container_id
 docker exec -it <container_id/container_name> bash  --> gives bash for that container
+
+Dockerfile
+    docker build -t tulsyanshubham/<image name>:<latest/version> .
+docker-compose.yml
+    docker-compose -f docker-compose.yml up  -> to start
+    docker-compose -f docker-compose.yml up --build  -> to rebuild changes
+    docker-compose -f docker-compose.yml down  -> to stop, removes all (containers, networks, volumes)

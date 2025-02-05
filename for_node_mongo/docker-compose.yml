@@ -1,0 +1,9 @@
+services:
+  mymongo:
+    image: mongo
+  mynode:
+    build: .
+    depends_on:
+      - mymongo
+    ports:
+      - "8000:8000"
